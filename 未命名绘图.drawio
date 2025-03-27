@@ -10,16 +10,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--1" value="length:int {30}" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+          <mxGeometry y="26" width="160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="kycQt3Gds_gXBmmXhYu5-12" value="Sprites: List&lt;Sprite&gt;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--0">
+          <mxGeometry y="50" width="160" height="24" as="geometry" />
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--4" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
-          <mxGeometry y="52" width="160" height="8" as="geometry" />
+          <mxGeometry y="74" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--5" value="detection(x1:int, x2:int)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
-          <mxGeometry y="60" width="160" height="26" as="geometry" />
+          <mxGeometry y="82" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--6" value="Sprite" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="220" y="320" width="170" height="138" as="geometry">
+          <mxGeometry x="220" y="320" width="170" height="110" as="geometry">
             <mxRectangle x="130" y="380" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -31,9 +34,6 @@
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--9" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
           <mxGeometry y="78" width="170" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="zkfFHV4jXpPFQw0GAbJ--10" value="Is Eligible To Enroll" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" parent="zkfFHV4jXpPFQw0GAbJ--6" vertex="1">
-          <mxGeometry y="86" width="170" height="26" as="geometry" />
         </mxCell>
         <mxCell id="kycQt3Gds_gXBmmXhYu5-1" value="" style="endArrow=none;html=1;rounded=0;exitX=0.456;exitY=0.014;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -47,8 +47,26 @@
         <mxCell id="kycQt3Gds_gXBmmXhYu5-4" value="0..1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="295" y="258" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="kycQt3Gds_gXBmmXhYu5-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:&#39;Menlo-Regular&#39;,monospace;font-size:12.8pt;&quot;&gt;如果處於位置&lt;span style=&quot;font-family:&#39;Source Code Pro&#39;,monospace;&quot;&gt; x 1 &lt;/span&gt;的生命 &lt;span style=&quot;font-family:&#39;Source Code Pro&#39;,monospace;&quot;&gt;(c 1) &lt;/span&gt;想要移動到&lt;span style=&quot;font-family:&#39;Source Code Pro&#39;,monospace;&quot;&gt; x 2&lt;br&gt;&lt;/span&gt;，而位置&lt;span style=&quot;font-family:&#39;Source Code Pro&#39;,monospace;&quot;&gt; x 2 &lt;/span&gt;上存在著另一個生命 &lt;span style=&quot;font-family:&#39;Source Code Pro&#39;,monospace;&quot;&gt;(c 2) &lt;/span&gt;的話，此時就會觸發&lt;span style=&quot;font-family:&#39;Source Code Pro&#39;,monospace;&quot;&gt; c 1 &lt;/span&gt;和&lt;span style=&quot;font-family:&#39;Source Code Pro&#39;,monospace;&quot;&gt; c 2&lt;br&gt;&lt;/span&gt;之間的碰撞 &lt;span style=&quot;font-family:&#39;Source Code Pro&#39;,monospace;&quot;&gt;(Collision)&lt;/span&gt;，不同生命種類組合的會有不同的碰撞效果：&lt;/pre&gt;&lt;/div&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="414" y="99" width="626" height="120" as="geometry" />
+        <mxCell id="kycQt3Gds_gXBmmXhYu5-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="kycQt3Gds_gXBmmXhYu5-6" target="zkfFHV4jXpPFQw0GAbJ--5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kycQt3Gds_gXBmmXhYu5-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;div style=&quot;background-color: rgb(30, 31, 34); color: rgb(188, 190, 196);&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font face=&quot;Menlo-Regular, monospace&quot; color=&quot;#bcbec4&quot;&gt;&lt;span style=&quot;font-size: 17.0667px;&quot;&gt;如果處於位置 x 1 的生命 (c 1) 想要移動到 x 2&lt;br/&gt;，而位置 x 2 上存在著另一個生命 (c 2) 的話，此時就會觸發 c 1 和 c 2&lt;br/&gt;之間的碰撞 (Collision)，不同生命種類組合的會有不同的碰撞效果：&lt;br/&gt;Water 與 Fire 的碰撞效果：&lt;br/&gt;Water 從世界中被移除。&lt;br/&gt;Fire 從世界中被移除。&lt;br/&gt;Water 與 Water 的碰撞效果： 移動失敗。&lt;br/&gt;Fire 與 Fire 的碰撞效果： 移動失敗。&lt;br/&gt;&lt;br/&gt;Hero 與 Fire 的碰撞效果：&lt;br/&gt;Hero 生命值減少 10 滴。&lt;br/&gt;Fire 從世界中被移除。&lt;br/&gt;如果 c1 為 Hero， c1 移動成功。&lt;br/&gt;&lt;br/&gt;Hero 與 Water 的碰撞效果：&lt;br/&gt;Hero 生命值增加 10 滴。&lt;br/&gt;Water 從世界中被移除。&lt;br/&gt;&lt;br/&gt;如果 c1 為 Hero， c1 移動成功。&lt;br/&gt;Hero 與 Hero 的碰撞效果： 移動失敗。&lt;/span&gt;&lt;/font&gt;&lt;font face=&quot;Menlo-Regular, monospace&quot; color=&quot;rgba(0, 0, 0, 0)&quot;&gt;&lt;span style=&quot;font-size: 12.8pt;&quot;&gt;&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="414" y="99" width="626" height="651" as="geometry" />
+        </mxCell>
+        <mxCell id="kycQt3Gds_gXBmmXhYu5-13" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;div style=&quot;background-color: rgb(30, 31, 34); color: rgb(188, 190, 196);&quot;&gt;&lt;pre style=&quot;font-family:&#39;Source Code Pro&#39;,monospace;font-size:12.8pt;&quot;&gt;Hero &lt;/pre&gt;&lt;pre style=&quot;font-family:&#39;Source Code Pro&#39;,monospace;font-size:12.8pt;&quot;&gt;(&lt;span style=&quot;font-family:&#39;Menlo-Regular&#39;,monospace;&quot;&gt;在世界中顯示為&lt;/span&gt; H)&lt;span style=&quot;font-family:&#39;Menlo-Regular&#39;,monospace;&quot;&gt;，&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family:&#39;Source Code Pro&#39;,monospace;font-size:12.8pt;&quot;&gt;Hero &lt;span style=&quot;font-family:&#39;Menlo-Regular&#39;,monospace;&quot;&gt;擁有生命值 &lt;/span&gt;(HP)&lt;span style=&quot;font-family:&#39;Menlo-Regular&#39;,monospace;&quot;&gt;，生命值的初始值為&lt;/span&gt; 30&lt;span style=&quot;font-family:&#39;Menlo-Regular&#39;,monospace;&quot;&gt;。如果&lt;/span&gt; HP ≤ 0 &lt;span style=&quot;font-family:&#39;Menlo-Regular&#39;,monospace;&quot;&gt;時，&lt;/span&gt;Hero &lt;span style=&quot;font-family:&#39;Menlo-Regular&#39;,monospace;&quot;&gt;死亡，並且會從世界中被移除。&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry y="770" width="870" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="kycQt3Gds_gXBmmXhYu5-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.143;entryY=0.031;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="zkfFHV4jXpPFQw0GAbJ--6" target="kycQt3Gds_gXBmmXhYu5-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kycQt3Gds_gXBmmXhYu5-15" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#FF3333;labelBackgroundColor=#FF3333;labelBorderColor=#FF3333;fontStyle=1;fontSize=15;strokeColor=#FF3333;strokeWidth=6;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="550" as="sourcePoint" />
+            <mxPoint x="830" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kycQt3Gds_gXBmmXhYu5-16" value="Force-BV (輸入比對型)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1060" y="80" width="480" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
